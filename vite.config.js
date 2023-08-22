@@ -10,4 +10,8 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
+  test: {
+    reporters: "vitest-sonar-reporter",
+    outputFile: "sonar-report.xml",
+  },
 });
